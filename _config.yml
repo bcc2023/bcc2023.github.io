@@ -1,11 +1,10 @@
-title: Wang Shida's Personal Website
-email: shida_wang@u.nus.edu
+title: Xue Beichen's Personal Website
+email: xue.beichen@u.nus.edu
 description: "Musings of a young Mathematician and Computer Scientist."
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://radarfudan.github.io" # the base hostname & protocol for your site, e.g. http://example.com
-name: Wang Shida
-twitter_username: SanderWangSD
-github_username: radarFudan
+url: "https://bcc2023.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+name: Xue Beichen
+github_username: bcc2023
 
 markdown: kramdown
 permalink: pretty
