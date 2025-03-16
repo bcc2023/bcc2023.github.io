@@ -6,67 +6,65 @@
 }
 
 body {
-    font-family: 'Bebas Neue', sans-serif;
-    background: linear-gradient(45deg, #FF0080, #00BFFF);
-    color: #fff;
+    font-family: 'Orbitron', sans-serif;
+    background: linear-gradient(45deg, #111, #222);
+    color: #00FF88;
     line-height: 1.6em;
-    margin: 40px auto;
+    margin: 50px auto;
     width: 80%;
-    text-align: center;
 }
 
 h1 {
-    font-size: 4em;
+    font-size: 3.8em;
     font-weight: bold;
-    color: #FFEB3B;
+    color: #00FF88;
     text-align: center;
-    text-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
-    letter-spacing: 2px;
-    margin-bottom: 30px;
+    text-shadow: 0 0 10px rgba(0, 255, 136, 0.8);
 }
 
 h2 {
-    font-size: 2.2em;
-    color: #FFEB3B;
-    font-weight: 500;
+    font-size: 2.5em;
+    color: #FF4081;
+    margin-bottom: 15px;
+    font-weight: bold;
     letter-spacing: 1px;
-    text-transform: uppercase;
 }
 
 .section {
-    background-color: rgba(0, 0, 0, 0.6);
+    background: #121212;
     padding: 40px;
     margin-bottom: 40px;
     border-radius: 12px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 5px 30px rgba(0, 255, 136, 0.2);
     transition: transform 0.3s ease;
 }
 
 .section:hover {
     transform: scale(1.05);
+    box-shadow: 0 15px 45px rgba(0, 255, 136, 0.4);
 }
 
 p {
-    font-size: 1.4em;
-    color: #F5F5F5;
+    font-size: 1.5em;
+    color: #B0BEC5;
     margin-bottom: 20px;
 }
 
 a {
-    color: #FFEB3B;
+    color: #FF4081;
     text-decoration: none;
     font-weight: bold;
-    border-bottom: 2px solid #FFEB3B;
+    border-bottom: 2px solid #FF4081;
 }
 
 a:hover {
-    color: #00BFFF;
-    border-bottom: 2px solid #00BFFF;
+    color: #00FF88;
+    border-bottom: 2px solid #00FF88;
 }
 
 /* Emphasized sections */
 em {
     font-style: italic;
-    font-weight: bold;
-    color: #FFEB3B;
+    font-weight: 600;
+    color: #FF4081;
 }
