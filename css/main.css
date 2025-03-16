@@ -14,7 +14,7 @@ body {
     margin: 60px auto;  /* Increased margin for more white space around */
     width: 80%;
     overflow-x: hidden; /* Prevent horizontal scroll */
-    background-image: url('assets/pattern.png'); /* Subtle pattern in the background */
+    background-image: url('../assets/Background.png'); /* Subtle pattern in the background */
     background-repeat: repeat; /* Repeat the pattern */
 }
 
