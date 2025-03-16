@@ -6,108 +6,67 @@
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
-    background-color: #121212;
-    color: #F5F5F5;
+    font-family: 'Bebas Neue', sans-serif;
+    background: linear-gradient(45deg, #FF0080, #00BFFF);
+    color: #fff;
     line-height: 1.6em;
-    margin: 60px auto;
-    width: 70%;
+    margin: 40px auto;
+    width: 80%;
     text-align: center;
-    font-weight: 400;
 }
 
 h1 {
-    font-size: 3em;
+    font-size: 4em;
     font-weight: bold;
-    letter-spacing: 1px;
-    margin-bottom: 20px;
-    color: #F9A825; /* A bright yellow for a bold statement */
-    text-transform: uppercase;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
-    animation: fadeIn 1.5s ease-in-out;
+    color: #FFEB3B;
+    text-align: center;
+    text-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+    letter-spacing: 2px;
+    margin-bottom: 30px;
 }
 
 h2 {
     font-size: 2.2em;
-    color: #E91E63; /* Vibrant pink for headers */
-    margin-bottom: 15px;
-    font-weight: 600;
-    letter-spacing: 0.5px;
-    text-transform: capitalize;
+    color: #FFEB3B;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-transform: uppercase;
 }
 
-/* Special hover effect on the title */
-h1:hover {
-    transform: scale(1.05);
-    color: #FF5722;
-    transition: all 0.3s ease;
-}
-
-/* Style for each section */
 .section {
-    background: linear-gradient(135deg, #333333, #444444);
-    padding: 40px 30px;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 40px;
     margin-bottom: 40px;
-    border-radius: 15px;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
-    transition: transform 0.2s ease-in-out;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
 }
 
 .section:hover {
-    transform: scale(1.02);
+    transform: scale(1.05);
 }
 
-.section h2 {
-    color: #FFEB3B; /* Bright yellow for section titles */
-    text-transform: uppercase;
-    letter-spacing: 2px;
-}
-
-/* Paragraph styling */
 p {
     font-size: 1.4em;
-    color: #D5D5D5;
-    line-height: 1.8em;
+    color: #F5F5F5;
     margin-bottom: 20px;
-    letter-spacing: 0.5px;
 }
 
-/* Links */
 a {
-    color: #FF5722;
+    color: #FFEB3B;
     text-decoration: none;
     font-weight: bold;
-    border-bottom: 2px solid #FF5722;
-    transition: color 0.3s ease, border-bottom 0.3s ease;
+    border-bottom: 2px solid #FFEB3B;
 }
 
 a:hover {
-    color: #FFEB3B;
-    border-bottom: 2px solid #FFEB3B;
+    color: #00BFFF;
+    border-bottom: 2px solid #00BFFF;
 }
 
 /* Emphasized sections */
 em {
     font-style: italic;
-    font-weight: 700;
+    font-weight: bold;
     color: #FFEB3B;
 }
-
-/* Animations */
-@keyframes fadeIn {
-    0% {
-        opacity: 0;
-        transform: translateY(50px);
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-/* Add some cool background on hover to sections */
-.section:hover {
-    background: linear-gradient(135deg, #FF5722, #E91E63);
-    color: white;
-}
-
