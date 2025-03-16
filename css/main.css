@@ -1,52 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Raleway:wght@300;600&display=swap');
+
 body {
     margin: 60px auto;
     width: 70%;
+    background-color: #0a0a0a;
+    color: #e0e0e0;
+    font-family: 'Raleway', 'Helvetica', 'Arial', sans-serif;
 }
 
 nav ul,
 footer ul {
-    font-family: 'Helvetica', 'Arial', 'Sans-Serif';
-    padding: 0px;
+    font-family: 'Orbitron', 'Helvetica', 'Arial', sans-serif;
+    padding: 0;
     list-style: none;
     font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
 }
 
 nav ul li,
 footer ul li {
     display: inline;
-    margin-right: 20px;
+    margin-right: 25px;
 }
 
 a {
     text-decoration: none;
-    color: #999;
+    color: #00eaff;
+    font-weight: 600;
+    transition: color 0.3s ease-in-out;
 }
 
 a:hover {
     text-decoration: underline;
+    color: #ff0077;
 }
 
 h1 {
-    font-size: 3em;
-    font-family: 'Helvetica', 'Arial', 'Sans-Serif';
+    font-size: 4em;
+    font-family: 'Orbitron', 'Helvetica', 'Arial', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: center;
+    background: linear-gradient(90deg, #ff0077, #00eaff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 p {
-    font-size: 1.5em;
-    line-height: 1.4em;
-    color: #333;
+    font-size: 1.3em;
+    line-height: 1.6em;
+    color: #ccc;
 }
 
 footer {
-    border-top: 1px solid #d5d5d5;
-    font-size: .8em;
+    border-top: 1px solid #444;
+    font-size: 0.9em;
+    text-align: center;
+    padding-top: 20px;
 }
 
 ul.posts {
     margin: 20px auto 40px;
-    font-size: 1.5em;
+    font-size: 1.2em;
+    text-align: center;
 }
 
 ul.posts li {
     list-style: none;
+}
+
+/* Fancy animations and hover effects */
+.blurb {
+    text-align: center;
+    padding: 40px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+}
+
+a:hover, button:hover {
+    transform: scale(1.05);
+    transition: all 0.3s ease-in-out;
 }
