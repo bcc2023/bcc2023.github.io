@@ -1,49 +1,76 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Xue Beichen's Personal Website</title>
-    <link rel="stylesheet" href="css/main.css">
-</head>
-<body>
-    <div class="blurb">
-        <h1>Hey there</h1>
-        <h1>I'm Xue Beichen (薛北辰)! 👋</h1>
-        <p>I'm a final-year undergraduate at the National University of Singapore (NUS), majoring in Data Science and Analytics. I’m on a journey to unravel the deeper connections between humans and AI chatbots. 🤖💬</p>
-        
-        <!-- CV Download Link -->
-        <div class="cv-download">
-            <p><a href="assets/resume/Beichen-Updated CV.pdf" download="Beichen-Updated CV.pdf">Download My CV</a></p>
-        </div>  
-        
-        <p><em>Research</em> <br>
-            Ever wondered if AI is subtly influencing your thoughts and behaviors? <br><br>
+/* Global reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-            In my paper, <a href="https://openreview.net/forum?id=64rCWVC78p">"We Shape AI, and Thereafter AI Shapes Us: Humans Align With AI Through Social Influences,"</a> I explored how AI can shape human behavior through social mechanisms like contagion and conformity. 🧠🤝 <br><br>
+body {
+    font-family: 'Orbitron', sans-serif;
+    background: linear-gradient(45deg, #111, #222);
+    color: #00FF88;
+    line-height: 1.6em;
+    margin: 50px auto;
+    width: 80%;
+}
 
-            Right now, I’m diving into how humans align their confidence with AI in decision-making. <br>
-            Imagine an AI confidently stating something—does that boost your trust, or make you second-guess yourself? <br><br>
+h1 {
+    font-size: 3.8em;
+    font-weight: bold;
+    color: #00FF88;
+    text-align: center;
+    text-shadow: 0 0 10px rgba(0, 255, 136, 0.8);
+    margin-bottom: 10px;  /* Adjust the space between the two h1 tags */
+}
 
-            My experiments show how AI's expressed confidence in natural language impacts human cognition and behavior in decision-making. <br><br>
+/* For the second h1 tag */
+h1 + h1 {
+    margin-top: 0;  /* Remove top margin on the second h1 */
+}
 
-            On top of that, I’m starting to investigate how people unconsciously align their value systems with AI ⚖️  
-        </p>
+h2 {
+    font-size: 2.5em;
+    color: #FF4081;
+    margin-bottom: 15px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
 
-        <p><em>Advisor</em> <br>
-            I am fortunate to be advised by Yi-Chieh (EJ) Lee! 🎓</p>
+.section {
+    background: #121212;
+    padding: 40px;
+    margin-bottom: 40px;
+    border-radius: 12px;
+    box-shadow: 0 5px 30px rgba(0, 255, 136, 0.2);
+    transition: transform 0.3s ease;
+}
 
-        <p><em>Education</em> <br>
-            B.S. in Data Science and Analytics, National University of Singapore, 2021–present </p>
+.section:hover {
+    transform: scale(1.05);
+    box-shadow: 0 15px 45px rgba(0, 255, 136, 0.4);
+}
 
-        <p><em>Skills</em> <br>
-            Programming: C/C++, Java, Python (PyTorch), MATLAB (CVX), PostgreSQL, R <br>
-            Thinking too much about AI and human cognitive psychology ☕🤯</p>
+p {
+    font-size: 1.5em;
+    color: #B0BEC5;
+    margin-bottom: 20px;
+}
 
-        <p><em>Languages</em> <br>
-            Fluent in English and Mandarin.</p>
+a {
+    color: #FF4081;
+    text-decoration: none;
+    font-weight: bold;
+    border-bottom: 2px solid #FF4081;
+}
 
+a:hover {
+    color: #00FF88;
+    border-bottom: 2px solid #00FF88;
+}
 
-    </div><!-- /.blurb -->
-</body>
-</html>
+/* Emphasized sections */
+em {
+    font-style: italic;
+    font-weight: 600;
+    color: #FF4081;
+}
