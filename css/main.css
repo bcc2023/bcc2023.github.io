@@ -1,85 +1,113 @@
-@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Raleway:wght@300;600&display=swap');
+/* Global reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #121212;
+    color: #F5F5F5;
+    line-height: 1.6em;
     margin: 60px auto;
     width: 70%;
-    background-color: #0a0a0a;
-    color: #e0e0e0;
-    font-family: 'Raleway', 'Helvetica', 'Arial', sans-serif;
-}
-
-nav ul,
-footer ul {
-    font-family: 'Orbitron', 'Helvetica', 'Arial', sans-serif;
-    padding: 0;
-    list-style: none;
-    font-weight: bold;
-    text-transform: uppercase;
     text-align: center;
-}
-
-nav ul li,
-footer ul li {
-    display: inline;
-    margin-right: 25px;
-}
-
-a {
-    text-decoration: none;
-    color: #00eaff;
-    font-weight: 600;
-    transition: color 0.3s ease-in-out;
-}
-
-a:hover {
-    text-decoration: underline;
-    color: #ff0077;
+    font-weight: 400;
 }
 
 h1 {
-    font-size: 4em;
-    font-family: 'Orbitron', 'Helvetica', 'Arial', sans-serif;
+    font-size: 3em;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    color: #F9A825; /* A bright yellow for a bold statement */
+    text-transform: uppercase;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+h2 {
+    font-size: 2.2em;
+    color: #E91E63; /* Vibrant pink for headers */
+    margin-bottom: 15px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-transform: capitalize;
+}
+
+/* Special hover effect on the title */
+h1:hover {
+    transform: scale(1.05);
+    color: #FF5722;
+    transition: all 0.3s ease;
+}
+
+/* Style for each section */
+.section {
+    background: linear-gradient(135deg, #333333, #444444);
+    padding: 40px 30px;
+    margin-bottom: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s ease-in-out;
+}
+
+.section:hover {
+    transform: scale(1.02);
+}
+
+.section h2 {
+    color: #FFEB3B; /* Bright yellow for section titles */
     text-transform: uppercase;
     letter-spacing: 2px;
-    text-align: center;
-    background: linear-gradient(90deg, #ff0077, #00eaff);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
 }
 
+/* Paragraph styling */
 p {
-    font-size: 1.3em;
-    line-height: 1.6em;
-    color: #ccc;
+    font-size: 1.4em;
+    color: #D5D5D5;
+    line-height: 1.8em;
+    margin-bottom: 20px;
+    letter-spacing: 0.5px;
 }
 
-footer {
-    border-top: 1px solid #444;
-    font-size: 0.9em;
-    text-align: center;
-    padding-top: 20px;
+/* Links */
+a {
+    color: #FF5722;
+    text-decoration: none;
+    font-weight: bold;
+    border-bottom: 2px solid #FF5722;
+    transition: color 0.3s ease, border-bottom 0.3s ease;
 }
 
-ul.posts {
-    margin: 20px auto 40px;
-    font-size: 1.2em;
-    text-align: center;
+a:hover {
+    color: #FFEB3B;
+    border-bottom: 2px solid #FFEB3B;
 }
 
-ul.posts li {
-    list-style: none;
+/* Emphasized sections */
+em {
+    font-style: italic;
+    font-weight: 700;
+    color: #FFEB3B;
 }
 
-/* Fancy animations and hover effects */
-.blurb {
-    text-align: center;
-    padding: 40px;
-    background: rgba(255, 255, 255, 0.05);
-    border-radius: 15px;
-    box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+/* Animations */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
-a:hover, button:hover {
-    transform: scale(1.05);
-    transition: all 0.3s ease-in-out;
+/* Add some cool background on hover to sections */
+.section:hover {
+    background: linear-gradient(135deg, #FF5722, #E91E63);
+    color: white;
 }
+
