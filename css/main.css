@@ -13,6 +13,7 @@ body {
     line-height: 1.8em;  /* Increased line-height for better readability */
     margin: 60px auto;  /* Increased margin for more white space around */
     width: 80%;
+    overflow-x: hidden; /* Prevent horizontal scroll */
 }
 
 /* Title styling */
@@ -22,8 +23,19 @@ h1 {
     color: #00FF88;
     text-align: center;
     text-shadow: 0 0 10px rgba(0, 255, 136, 0.8);
-    margin-top: 80px; /* Add more space above the title */
-    margin-bottom: 30px; /* More space below the title */
+    margin-top: 80px;
+    margin-bottom: 30px;
+    animation: neonGlow 1.5s infinite alternate; /* Neon glowing effect */
+}
+
+/* Neon glow animation for h1 */
+@keyframes neonGlow {
+    0% {
+        text-shadow: 0 0 5px #00FF88, 0 0 10px #00FF88, 0 0 15px #00FF88, 0 0 20px #00FF88;
+    }
+    100% {
+        text-shadow: 0 0 20px #00FF88, 0 0 30px #00FF88, 0 0 40px #00FF88, 0 0 50px #00FF88;
+    }
 }
 
 /* Subheading styling */
@@ -34,17 +46,26 @@ h2 {
     font-weight: bold;
     letter-spacing: 1px;
     text-transform: uppercase;
+    animation: neonGlow 1.5s infinite alternate; /* Neon glowing effect */
 }
 
 /* Section styling */
 .section {
     background: #121212;
-    padding: 60px;  /* Increased padding for more space within each section */
-    margin-bottom: 50px;  /* Increased margin to separate sections */
+    padding: 60px;
+    margin-bottom: 50px;
     border-radius: 12px;
     box-shadow: 0 5px 30px rgba(0, 255, 136, 0.2);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     position: relative;
+    opacity: 0;
+    animation: fadeIn 1s forwards;  /* Fade-in effect when the section enters */
+}
+
+@keyframes fadeIn {
+    100% {
+        opacity: 1;
+    }
 }
 
 /* Section hover effect */
@@ -55,26 +76,27 @@ h2 {
 
 /* Section Title styling */
 .section h2 {
-    color: #FF4081; /* Neon pink for section titles */
+    color: #FF4081;
     font-size: 2.4em;
     font-weight: bold;
-    margin-bottom: 25px; /* More space below section titles */
+    margin-bottom: 25px;
     letter-spacing: 1px;
     text-transform: uppercase;
     text-shadow: 0 0 15px rgba(255, 64, 129, 0.8);
+    animation: neonGlow 1.5s infinite alternate; /* Neon glowing effect */
 }
 
 /* Section content styling */
 .section p {
     font-size: 1.5em;
     color: #B0BEC5;
-    line-height: 2em;  /* Increased line-height for better readability */
-    margin-bottom: 30px;  /* More space below each paragraph */
+    line-height: 2em;
+    margin-bottom: 30px;
 }
 
 /* Make section content stand out */
 .section p:not(:first-child) {
-    margin-top: 30px; /* Increased margin between paragraphs */
+    margin-top: 30px;
 }
 
 /* Emphasized sections */
@@ -86,9 +108,9 @@ em {
 
 /* Paragraph styling (outside of sections) */
 p {
-    font-size: 1.6em;  /* Increased font size for better readability */
+    font-size: 1.6em;
     color: #B0BEC5;
-    margin-bottom: 30px;  /* More space between paragraphs */
+    margin-bottom: 30px;
 }
 
 /* Links styling */
@@ -97,24 +119,45 @@ a {
     text-decoration: none;
     font-weight: bold;
     border-bottom: 2px solid #FF4081;
+    transition: all 0.3s ease;
+    position: relative;
 }
 
+/* Hover effect for links */
 a:hover {
     color: #00FF88;
     border-bottom: 2px solid #00FF88;
+    transform: scale(1.1);
+}
+
+/* Glow effect for links */
+a::after {
+    content: "";
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #00FF88;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+a:hover::after {
+    transform: scaleX(1);
 }
 
 /* Add more space between lines for general text */
 h1, h2, p:not(.section p) {
-    line-height: 2.2em;  /* Even more space between lines */
-    margin-bottom: 40px;  /* More space between blocks of text */
+    line-height: 2.2em;
+    margin-bottom: 40px;
 }
 
 /* Adjust font size and spacing for the download CV link */
 .download-cv {
     display: inline-block;
-    padding: 16px 36px;  /* Larger button for better visibility */
-    margin-top: 30px;  /* More space above the CV download button */
+    padding: 16px 36px;
+    margin-top: 30px;
     background-color: #FF4081;
     color: #fff;
     font-size: 1.5em;
@@ -129,7 +172,7 @@ h1, h2, p:not(.section p) {
 .download-cv:hover {
     background-color: #00FF88;
     text-shadow: 0 0 10px rgba(0, 255, 136, 0.8);
-    transform: scale(1.05);  /* Slight scale effect on hover */
+    transform: scale(1.05);
 }
 
 /* Section Title separator (optional, can add visual divider) */
@@ -142,4 +185,26 @@ h1, h2, p:not(.section p) {
     height: 5px;
     background-color: #FF4081;
     border-radius: 12px 12px 0 0;
+}
+
+/* Parallax effect on the background */
+body {
+    background: linear-gradient(45deg, #111, #222), url('assets/your-image.jpg'); /* You can replace with any image */
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+/* Optional animation for the page load */
+body {
+    animation: pageLoad 1.5s ease-out forwards;
+}
+
+@keyframes pageLoad {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
