@@ -8,12 +8,14 @@
 /* General body styling */
 body {
     font-family: 'Orbitron', sans-serif;
-    background: linear-gradient(45deg, #111, #222);
+    background: #111; /* Solid dark background */
     color: #00FF88;
     line-height: 1.8em;  /* Increased line-height for better readability */
     margin: 60px auto;  /* Increased margin for more white space around */
     width: 80%;
     overflow-x: hidden; /* Prevent horizontal scroll */
+    background-image: url('assets/pattern.png'); /* Subtle pattern in the background */
+    background-repeat: repeat; /* Repeat the pattern */
 }
 
 /* Title styling */
@@ -22,20 +24,8 @@ h1 {
     font-weight: bold;
     color: #00FF88;
     text-align: center;
-    text-shadow: 0 0 10px rgba(0, 255, 136, 0.8);
     margin-top: 80px;
     margin-bottom: 30px;
-    animation: neonGlow 1.5s infinite alternate; /* Neon glowing effect */
-}
-
-/* Neon glow animation for h1 */
-@keyframes neonGlow {
-    0% {
-        text-shadow: 0 0 5px #00FF88, 0 0 10px #00FF88, 0 0 15px #00FF88, 0 0 20px #00FF88;
-    }
-    100% {
-        text-shadow: 0 0 20px #00FF88, 0 0 30px #00FF88, 0 0 40px #00FF88, 0 0 50px #00FF88;
-    }
 }
 
 /* Subheading styling */
@@ -46,7 +36,6 @@ h2 {
     font-weight: bold;
     letter-spacing: 1px;
     text-transform: uppercase;
-    animation: neonGlow 1.5s infinite alternate; /* Neon glowing effect */
 }
 
 /* Section styling */
@@ -82,8 +71,6 @@ h2 {
     margin-bottom: 25px;
     letter-spacing: 1px;
     text-transform: uppercase;
-    text-shadow: 0 0 15px rgba(255, 64, 129, 0.8);
-    animation: neonGlow 1.5s infinite alternate; /* Neon glowing effect */
 }
 
 /* Section content styling */
@@ -110,7 +97,7 @@ em {
 p {
     font-size: 1.6em;
     color: #B0BEC5;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 /* Links styling */
@@ -189,7 +176,7 @@ h1, h2, p:not(.section p) {
 
 /* Parallax effect on the background */
 body {
-    background: linear-gradient(45deg, #111, #222), url('assets/your-image.jpg'); /* You can replace with any image */
+    background: linear-gradient(45deg, #111, #222), url('assets/pattern.png'); /* You can replace with any image */
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
