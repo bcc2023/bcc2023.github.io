@@ -5,6 +5,7 @@
     box-sizing: border-box;
 }
 
+/* General body styling */
 body {
     font-family: 'Orbitron', sans-serif;
     background: linear-gradient(45deg, #111, #222);
@@ -12,12 +13,6 @@ body {
     line-height: 1.6em;
     margin: 50px auto;
     width: 80%;
-}
-
-/* Make the line-spacing larger for body content that isn't in a section */
-h1, h2, p:not(.section p) {
-    line-height: 2em;  /* Add more space between lines */
-    margin-bottom: 30px;  /* Add more space between blocks of text */
 }
 
 /* Title styling */
@@ -39,19 +34,51 @@ h2 {
     letter-spacing: 1px;
 }
 
-/* Styling for sections */
+/* Section styling */
 .section {
     background: #121212;
     padding: 40px;
     margin-bottom: 40px;
     border-radius: 12px;
     box-shadow: 0 5px 30px rgba(0, 255, 136, 0.2);
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
 }
 
+/* Section hover effect */
 .section:hover {
     transform: scale(1.05);
     box-shadow: 0 15px 45px rgba(0, 255, 136, 0.4);
+}
+
+/* Section Title styling */
+.section h2 {
+    color: #FF4081; /* Neon pink for section titles */
+    font-size: 2.2em;
+    font-weight: bold;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-shadow: 0 0 15px rgba(255, 64, 129, 0.8);
+}
+
+/* Section content styling */
+.section p {
+    font-size: 1.4em;
+    color: #B0BEC5;
+    line-height: 1.8em;
+}
+
+/* Make section content stand out */
+.section p:not(:first-child) {
+    margin-top: 20px;
+}
+
+/* Emphasized sections */
+em {
+    font-style: italic;
+    font-weight: 600;
+    color: #FF4081;
 }
 
 /* Paragraph styling (outside of sections) */
@@ -74,9 +101,41 @@ a:hover {
     border-bottom: 2px solid #00FF88;
 }
 
-/* Emphasized sections */
-em {
-    font-style: italic;
-    font-weight: 600;
-    color: #FF4081;
+/* Add more space between lines for general text */
+h1, h2, p:not(.section p) {
+    line-height: 2em;  /* More space between lines */
+    margin-bottom: 30px;  /* More space between blocks of text */
+}
+
+/* Adjust font size and spacing for the download CV link */
+.download-cv {
+    display: inline-block;
+    padding: 12px 30px;
+    margin-top: 20px;
+    background-color: #FF4081;
+    color: #fff;
+    font-size: 1.4em;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.download-cv:hover {
+    background-color: #00FF88;
+    text-shadow: 0 0 10px rgba(0, 255, 136, 0.8);
+}
+
+/* Section Title separator (optional, can add visual divider) */
+.section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 5px;
+    background-color: #FF4081;
+    border-radius: 12px 12px 0 0;
 }
