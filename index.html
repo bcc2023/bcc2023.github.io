@@ -6,102 +6,144 @@
     <title>Xue Beichen's Personal Website</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <style>
+        /* Global Styles */
         body {
             font-family: 'Poppins', sans-serif;
             background-color: #f4f7fc;
             margin: 0;
-            padding: 0;
-            color: #333;
             padding: 20px; /* Margin for the entire page */
+            color: #333;
         }
+
         h1, h2 {
             color: #4A4A4A;
-            margin-bottom: 20px;
+            margin-bottom: 15px;
+            font-weight: 600;
         }
+
+        /* Blurb Section */
         .blurb {
             text-align: center;
-            padding: 50px 20px;
-            background-color: #fff;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 60px 30px;
+            background-color: #ffffff;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
             margin-bottom: 40px;
         }
+
         .blurb h1 {
-            font-size: 2.5rem;
-        }
-        .blurb p {
-            font-size: 1.2rem;
-            line-height: 1.6;
+            font-size: 3rem;
             margin-bottom: 20px;
         }
-        .cv-download p {
+
+        .blurb p {
             font-size: 1.1rem;
+            line-height: 1.6;
+            margin-bottom: 25px;
         }
+
+        .cv-download p {
+            font-size: 1.2rem;
+        }
+
         .cv-download a {
             text-decoration: none;
             background-color: #5c6bc0;
             color: white;
-            padding: 12px 20px;
-            border-radius: 5px;
+            padding: 15px 25px;
+            border-radius: 8px;
             transition: background-color 0.3s ease;
+            font-weight: 600;
         }
+
         .cv-download a:hover {
             background-color: #3949ab;
         }
 
+        /* Section Styles */
         .section {
-            padding: 40px 20px;
-            margin-bottom: 40px;
-            background-color: #fff;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 60px 30px;
+            margin-bottom: 60px;
+            background-color: #ffffff;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
         }
+
         .poster-section, .video-section {
             max-width: 1200px;
             margin: 0 auto;
         }
-        .section h2 {
+
+        /* Poster Section */
+        .poster-section h2 {
             font-size: 1.8rem;
             margin-bottom: 20px;
             color: #333;
+            text-align: center;
         }
 
-        /* Updated Poster Style for Half the Page Height */
         .poster-section img {
-            width: 100%; /* Make the width 100% */
-            max-width: 1000px; /* Optional max-width */
-            height: 50vh; /* Set the height to 50% of the viewport height */
-            object-fit: contain; /* Maintain aspect ratio */
-            margin: 0 auto; /* Center the image */
+            width: 100%;
+            max-width: 900px;
+            height: 50vh;
+            object-fit: contain;
+            margin: 30px auto;
             display: block;
             border-radius: 8px;
         }
 
-        .poster-section embed {
-            width: 100%;
-            height: 600px;
-            border: none;
-            border-radius: 8px;
+        /* Video Section */
+        .video-section h2 {
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            color: #333;
+            text-align: center;
         }
 
         .video-section video {
             width: 100%;
+            height: auto;
             border-radius: 8px;
+            margin-bottom: 20px;
         }
+
         .section a {
-            font-size: 1rem;
+            font-size: 1.1rem;
             color: #5c6bc0;
             text-decoration: none;
             font-weight: 600;
             transition: color 0.3s ease;
+            display: block;
+            text-align: center;
+            margin-top: 10px;
         }
+
         .section a:hover {
             color: #3949ab;
         }
 
+        /* Footer */
         footer {
             text-align: center;
             padding: 20px;
             background-color: #333;
             color: white;
+            font-size: 0.9rem;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .blurb h1 {
+                font-size: 2rem;
+            }
+
+            .blurb p {
+                font-size: 1rem;
+            }
+
+            .section h2 {
+                font-size: 1.5rem;
+            }
         }
     </style>
 </head>
@@ -116,26 +158,23 @@
         </div>
     </div><!-- /.blurb -->
 
-    <!-- Project Title Section -->
-    <div class="section project-title-section">
-        <h2>My Projects</h2>
-    
-    </div><!-- /.project-title-section -->
-
     <!-- Poster Section -->
     <div class="section poster-section">
-        <h2>We Shape AI, and Thereafter AI Shape Us: Humans Align with AI through Social Influences, ICLR 2025 Workshop & CHI 2025 SIG</h2>
-        <img src="assets/poster.png" alt="Poster Image">
         <p><a href="https://openreview.net/pdf?id=64rCWVC78p" target="_blank">Link to Paper</a></p>
+        <h2>We Shape AI, and Thereafter AI Shape Us: Humans Align with AI through Social Influences,<br> ICLR 2025 Workshop & CHI 2025 SIG</h2>
+        <img src="assets/poster.png" alt="Poster Image">
     </div><!-- /.poster-section -->
 
     <!-- Video Section -->
     <div class="section video-section">
-        <h2>An Interactive RAG Chatbot Agent for Assessing HDB Eligibility Based on User Profiles</h2>
+        <h2>An Interactive RAG Chatbot Agent <br> for Assessing HDB Eligibility Based on User Profiles</h2>
+        <p><a href="https://docs.google.com/presentation/d/1mHXqcz1m8NnccU7IPj9MSHLr0ZWZ0HcnQS11m2TYBxU/edit?pli=1#slide=id.g34aa34d6b91_4_62" target="_blank">Access the PPT</a></p>
+        
+        <p><a href="https://github.com/huangwanlu/DSA4265" target="_blank">Access the Code</a></p>
+    
         <video controls>
             <source src="assets/demo.mp4" type="video/mp4">
         </video>
-        <p><a href="https://docs.google.com/presentation/d/1mHXqcz1m8NnccU7IPj9MSHLr0ZWZ0HcnQS11m2TYBxU/edit?pli=1#slide=id.g34aa34d6b91_4_62" target="_blank">Access the PPT and code</a></p>
     </div><!-- /.video-section -->
 
     <!-- Footer Section -->
