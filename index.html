@@ -4,36 +4,130 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Xue Beichen's Personal Website</title>
-    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f4f7fc;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        h1, h2 {
+            color: #4A4A4A;
+            margin-bottom: 20px;
+        }
+        .blurb {
+            text-align: center;
+            padding: 50px 20px;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 40px;
+        }
+        .blurb h1 {
+            font-size: 2.5rem;
+        }
+        .blurb p {
+            font-size: 1.2rem;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+        .cv-download p {
+            font-size: 1.1rem;
+        }
+        .cv-download a {
+            text-decoration: none;
+            background-color: #5c6bc0;
+            color: white;
+            padding: 12px 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        .cv-download a:hover {
+            background-color: #3949ab;
+        }
+
+        .section {
+            padding: 40px 20px;
+            margin-bottom: 40px;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .poster-section, .video-section {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .section h2 {
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            color: #333;
+        }
+        .poster-section embed {
+            width: 100%;
+            height: 600px;
+            border: none;
+            border-radius: 8px;
+        }
+        .video-section video {
+            width: 100%;
+            border-radius: 8px;
+        }
+        .section a {
+            font-size: 1rem;
+            color: #5c6bc0;
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s ease;
+        }
+        .section a:hover {
+            color: #3949ab;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+        }
+    </style>
 </head>
 <body>
+
+    <!-- Blurb Section -->
     <div class="blurb">
         <h1>Hi, I'm Xue Beichen (薛北辰)! </h1>
-        <p> I'm a final-year undergraduate at the National University of Singapore (NUS), majoring in Data Science and Analytics. I’m on a journey to unravel the deeper connections between humans and AI chatbots. 🤖💬</p>
-
-        <!-- CV Download Link -->
+        <p>I'm a final-year undergraduate at the National University of Singapore (NUS), majoring in Data Science and Analytics. I’m intersted in exploring the deeper connections between humans and AI. 🤖💬</p>
         <div class="cv-download">
             <p><a href="assets/resume/Beichen-CV.pdf" download="Beichen-CV.pdf">Download My CV</a></p>
         </div>
     </div><!-- /.blurb -->
 
+    <!-- Project Title Section -->
+    <div class="section project-title-section">
+        <h2>Research Projects</h2>
+        <p>Explore some of the projects I've been working on that focus on the intersection of AI, human behavior, and technology.</p>
+    </div><!-- /.project-title-section -->
+
     <!-- Poster Section -->
-    <div class="poster-section">
-        <h2>We Shape AI, and Thereafter AI Shape Us: Humans Align with AI through Social Influences, ICLR 2025 Workshop & CHI 2025 SIG </h2>
-        <embed src="assets/Poster.pdf" type="application/pdf" width="100%" height="600px">
+    <div class="section poster-section">
+        <h2>We Shape AI, and Thereafter AI Shape Us: Humans Align with AI through Social Influences, ICLR 2025 Workshop & CHI 2025 SIG</h2>
+        <img src="assets/poster.png" alt="Poster Image" width="100%" height="auto" style="max-width: 100%; border-radius: 8px;">
         <p><a href="https://openreview.net/pdf?id=64rCWVC78p" target="_blank">Link to Paper</a></p>
     </div><!-- /.poster-section -->
 
     <!-- Video Section -->
-    <div class="video-section">
-        <h2>An Interactive RAG Chatbot Agent for Assessing HDB Eligibility Based on User Profiles </h2>
-        <video width="100%" controls>
+    <div class="section video-section">
+        <h2>An Interactive RAG Chatbot Agent for Assessing HDB Eligibility Based on User Profiles</h2>
+        <video controls>
             <source src="assets/demo.mp4" type="video/mp4">
-           
         </video>
         <p><a href="https://docs.google.com/presentation/d/1mHXqcz1m8NnccU7IPj9MSHLr0ZWZ0HcnQS11m2TYBxU/edit?pli=1#slide=id.g34aa34d6b91_4_62" target="_blank">Access the PPT and code</a></p>
     </div><!-- /.video-section -->
 
+    <!-- Footer Section -->
+    <footer>
+        <p>© 2025 Xue Beichen. All rights reserved.</p>
+    </footer>
+
 </body>
 </html>
-
