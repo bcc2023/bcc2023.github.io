@@ -7,14 +7,19 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <style>
         /* Global Styles */
+        html, body {
+            height: auto;
+            overflow-x: hidden;
+            overflow-y: auto;
+        }
+
         body {
             font-family: 'Poppins', sans-serif;
             background-color: #f4f7fc;
             margin: 0;
-            padding: 20px; /* Margin for the entire page */
+            padding: 20px;
             color: #333;
-            transform: scale(0.7); /* Scale everything to 70% */
-            transform-origin: top center; /* Keeps everything aligned from the top */
+            zoom: 0.7; /* Scales content without layout issues */
         }
 
         h1, h2 {
@@ -30,7 +35,7 @@
             background-color: #ffffff;
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
             border-radius: 10px;
-            margin-bottom: 60px; /* Increase bottom margin to create more space */
+            margin-bottom: 60px;
         }
 
         .blurb h1 {
@@ -65,7 +70,7 @@
         /* Section Styles */
         .section {
             padding: 60px 30px;
-            margin-bottom: 80px; /* Increase bottom margin to create more space between sections */
+            margin-bottom: 60px;
             background-color: #ffffff;
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
             border-radius: 10px;
@@ -168,12 +173,10 @@
     </div><!-- /.poster-section -->
 
     <!-- Video Section -->
-    <div class="section video-section" style="margin-top: 100px;">
+    <div class="section video-section">
         <h2>An Interactive RAG Chatbot Agent <br> for Assessing HDB Eligibility Based on User Profiles</h2>
         <p><a href="https://docs.google.com/presentation/d/1mHXqcz1m8NnccU7IPj9MSHLr0ZWZ0HcnQS11m2TYBxU/edit?pli=1#slide=id.g34aa34d6b91_4_62" target="_blank">Access the PPT</a></p>
-        
         <p><a href="https://github.com/huangwanlu/DSA4265" target="_blank">Access the Code</a></p>
-    
         <video controls>
             <source src="assets/demo.mp4" type="video/mp4">
         </video>
