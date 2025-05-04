@@ -64,11 +64,12 @@
             color: #333;
         }
 
-        /* Updated Poster Style */
+        /* Updated Poster Style for Half the Page Height */
         .poster-section img {
-            width: 80%; /* Adjust the width to make the image fit better */
-            max-width: 900px; /* Optional max width for large screens */
-            height: auto;
+            width: 100%; /* Make the width 100% */
+            max-width: 1000px; /* Optional max-width */
+            height: 50vh; /* Set the height to 50% of the viewport height */
+            object-fit: contain; /* Maintain aspect ratio */
             margin: 0 auto; /* Center the image */
             display: block;
             border-radius: 8px;
@@ -109,7 +110,7 @@
     <!-- Blurb Section -->
     <div class="blurb">
         <h1>Hi, I'm Xue Beichen (薛北辰)! </h1>
-        <p>I'm a final-year undergraduate at the National University of Singapore (NUS), majoring in Data Science and Analytics. I’m on a journey to unravel the deeper connections between humans and AI chatbots. 🤖💬</p>
+        <p>I'm a final-year undergraduate at the National University of Singapore (NUS), majoring in Data Science and Analytics. I’m on a journey to discover the deeper connections between humans and AI. 🤖💬</p>
         <div class="cv-download">
             <p><a href="assets/resume/Beichen-CV.pdf" download="Beichen-CV.pdf">Download My CV</a></p>
         </div>
@@ -117,8 +118,8 @@
 
     <!-- Project Title Section -->
     <div class="section project-title-section">
-        <h2>Research Projects</h2>
-        <p>Explore some of the projects I've been working on that focus on the intersection of AI, human behavior, and technology.</p>
+        <h2>My Projects</h2>
+    
     </div><!-- /.project-title-section -->
 
     <!-- Poster Section -->
