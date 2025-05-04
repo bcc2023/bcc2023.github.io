@@ -12,6 +12,7 @@
             margin: 0;
             padding: 0;
             color: #333;
+            padding: 20px; /* Margin for the entire page */
         }
         h1, h2 {
             color: #4A4A4A;
@@ -62,12 +63,24 @@
             margin-bottom: 20px;
             color: #333;
         }
+
+        /* Updated Poster Style */
+        .poster-section img {
+            width: 80%; /* Adjust the width to make the image fit better */
+            max-width: 900px; /* Optional max width for large screens */
+            height: auto;
+            margin: 0 auto; /* Center the image */
+            display: block;
+            border-radius: 8px;
+        }
+
         .poster-section embed {
             width: 100%;
             height: 600px;
             border: none;
             border-radius: 8px;
         }
+
         .video-section video {
             width: 100%;
             border-radius: 8px;
@@ -96,7 +109,7 @@
     <!-- Blurb Section -->
     <div class="blurb">
         <h1>Hi, I'm Xue Beichen (薛北辰)! </h1>
-        <p>I'm a final-year undergraduate at the National University of Singapore (NUS), majoring in Data Science and Analytics. I’m intersted in exploring the deeper connections between humans and AI. 🤖💬</p>
+        <p>I'm a final-year undergraduate at the National University of Singapore (NUS), majoring in Data Science and Analytics. I’m on a journey to unravel the deeper connections between humans and AI chatbots. 🤖💬</p>
         <div class="cv-download">
             <p><a href="assets/resume/Beichen-CV.pdf" download="Beichen-CV.pdf">Download My CV</a></p>
         </div>
@@ -111,7 +124,7 @@
     <!-- Poster Section -->
     <div class="section poster-section">
         <h2>We Shape AI, and Thereafter AI Shape Us: Humans Align with AI through Social Influences, ICLR 2025 Workshop & CHI 2025 SIG</h2>
-        <img src="assets/poster.png" alt="Poster Image" width="100%" height="auto" style="max-width: 100%; border-radius: 8px;">
+        <img src="assets/poster.png" alt="Poster Image">
         <p><a href="https://openreview.net/pdf?id=64rCWVC78p" target="_blank">Link to Paper</a></p>
     </div><!-- /.poster-section -->
 
