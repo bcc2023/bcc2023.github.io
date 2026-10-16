@@ -9,7 +9,7 @@ I am a Research Assistant in the School of Computing at the University of Utah. 
 ## Research Interests
 
 - **Eye tracking and visualization:** gaze and multimodal interaction traces of task-driven behavior
-- **Computational modeling:** cognitively grounded models of attention and scanpath prediction for interface evaluation
+- **Computational modeling of human attention:** cognitively grounded models of attention and scanpath prediction
 
 ## Updates
 
