@@ -13,6 +13,6 @@ I am a Research Assistant in the School of Computing at the University of Utah. 
 
 ## Updates
 
-- **[Nov. 2026]** I will be attending the **Trustworthy and Responsible AI Workshop** at SEEC, CU Boulder East Campus, on November 4–5. Happy to chat, so feel free to reach out!
+- **[Nov. 2026]** I will be attending the **Trustworthy and Responsible AI Workshop** at SEEC, CU Boulder East Campus, on November 4-5. Happy to chat, so feel free to reach out!
 
 {% include_relative _includes/publications.md %}

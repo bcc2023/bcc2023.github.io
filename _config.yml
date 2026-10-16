@@ -3,7 +3,7 @@ title: Beichen Xue
 position: Research Assistant
 affiliation: School of Computing, University of Utah
 affiliation_link: https://www.cs.utah.edu/
-email: beichen.xue (at) utah.edu
+email: beichen.xue@uath.edu
 
 # Search Engine Optimization (SEO)
 keywords: Beichen Xue, eye tracking, visualization, scanpath prediction, attention modeling, HCI
@@ -13,7 +13,7 @@ canonical: https://bcc2023.github.io/
 # Links
 # If you don't need one of them, you may delete the corresponding line.
 cv_link: assets/resume/Beichen-CV.pdf
-github_link: https://github.com/bcc2023
+# github_link: https://github.com/bcc2023
 google_scholar: https://scholar.google.com/citations?user=IxY2kssAAAAJ&hl=en
 # twitter:
 

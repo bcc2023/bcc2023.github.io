@@ -1,7 +1,52 @@
 main:
 
+  - title: "Toward Human-Like Task-Driven Gaze Navigation for Visualization"
+    authors: <strong>Beichen Xue</strong>, Yue Jiang
+    conference: ACM CHI Conference on Human Factors in Computing Systems <strong>(CHI)</strong>, 2027.
+    notes: Under review
+    image: ./assets/img/pubs/chi2027.png
+
+  - title: "Pace by Gaze: A Gaze-Informed Simulator of Constrained Cursor Movement"
+    authors: Xiangyu Zhou, <strong>Beichen Xue</strong>, Yue Jiang, Steve Oney
+    conference: ACM CHI Conference on Human Factors in Computing Systems <strong>(CHI)</strong>, 2027.
+    notes: Under review
+
+  - title: "DashTrace: Understanding Task-Driven Visual Attention and Multimodal Behavior in Analytical Dashboards"
+    authors: Yura Hwang, <strong>Beichen Xue</strong>, Yin Yang, Yue Jiang
+    conference: ACM CHI Conference on Human Factors in Computing Systems <strong>(CHI)</strong>, 2027.
+    notes: Under review
+
+  - title: "Gaze in the Era of Foundation Models: A Survey of Integration, Interaction, and Evaluation"
+    authors: Jinghui Hu, <strong>Beichen Xue</strong>, Hans Gellersen, Yue Jiang
+    conference: ACM CHI Conference on Human Factors in Computing Systems <strong>(CHI)</strong>, 2027.
+    notes: Under review
+
+  - title: "Generative User Interfaces: A Definition and Design Space"
+    authors: Katja Pott, Eunhye Kim, Chenyang Wang, Thiemo Wambsganss, Juho Kim, …, <strong>Beichen Xue</strong>, …, Matthias Söllner (50+ authors)
+    conference: ACM CHI Conference on Human Factors in Computing Systems <strong>(CHI)</strong>, 2027.
+    notes: Under review
+
+  - title: "Attention Is All UI Needs: The 6th Computational UI Workshop at CHI"
+    authors: Kewen Peng*, <strong>Beichen Xue*</strong>, Meng Chen, Felix Kretzer, Jeffrey Nichols, Tiffany Knearem, Alexander Maedche, Christof Lutteroth, Hans Gellersen, Jeffrey P. Bigham, Yue Jiang (*Equal contribution)
+    conference: Workshop proposal, ACM CHI Conference on Human Factors in Computing Systems <strong>(CHI)</strong>, 2027.
+    notes: Under review
+
+  - title: "How Human Is Human-Like? Interpreting Scanpath Similarity Metrics"
+    authors: Parvin Emami, <strong>Beichen Xue</strong>, Yue Jiang, Luis A. Leiva
+    conference: ACM Symposium on Eye Tracking Research and Applications <strong>(ETRA)</strong>, 2027.
+    notes: Under review
+    image: ./assets/img/pubs/etra2027.png
+
   - title: "We Shape AI, and Thereafter AI Shape Us: Humans Align with AI through Social Influences"
-    conference_short: ICLR-W
+    authors: Jingshu Li, Tianqi Song, <strong>Beichen Xue</strong>, Yi-Chieh Lee
     conference: ICLR 2025 Workshop <strong>&</strong> CHI 2025 SIG
     pdf: https://openreview.net/pdf?id=64rCWVC78p
-    image: ./assets/poster.png
+    page: https://openreview.net/forum?id=64rCWVC78p
+    image: ./assets/img/pubs/iclr-chi2025.png
+
+  - title: "State-Space Models With Layer-Wise Nonlinearity Are Universal Approximators With Exponential Decaying Memory"
+    authors: Shida Wang, <strong>Beichen Xue</strong>
+    conference: Conference on Neural Information Processing Systems <strong>(NeurIPS)</strong>, 2023.
+    pdf: https://openreview.net/pdf?id=i0OmcF14Kf
+    page: https://openreview.net/forum?id=i0OmcF14Kf
+    image: ./assets/img/pubs/neurips2023.png
