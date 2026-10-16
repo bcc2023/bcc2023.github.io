@@ -1,18 +1,35 @@
-title: Xue Beichen's Personal Website
-email: xue.beichen@u.nus.edu
-description: "Musings of a young Mathematician and Computer Scientist."
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://bcc2023.github.io" # the base hostname & protocol for your site, e.g. http://example.com
-name: Xue Beichen
-github_username: bcc2023
+# Basic Information
+title: Beichen Xue
+position: Research Assistant
+affiliation: School of Computing, University of Utah
+affiliation_link: https://www.cs.utah.edu/
+email: beichen.xue (at) utah.edu
 
-markdown: kramdown
-permalink: pretty
+# Search Engine Optimization (SEO)
+keywords: Beichen Xue, eye tracking, visualization, scanpath prediction, attention modeling, HCI
+description: Beichen Xue's academic homepage. Research on eye tracking, visualization, and computational modeling of attention and interactive behavior.
+canonical: https://bcc2023.github.io/
 
-theme: minima
+# Links
+# If you don't need one of them, you may delete the corresponding line.
+cv_link: assets/resume/Beichen-CV.pdf
+github_link: https://github.com/bcc2023
+google_scholar: https://scholar.google.com/citations?user=IxY2kssAAAAJ&hl=en
+# twitter:
 
-highlighter: rouge
-kramdown:
-  input: GFM
-  auto_ids: true
-  syntax_highlighter: rouge
+# Images
+avatar: ./assets/img/avatar.jpeg
+favicon: ./assets/img/favicon.png
+favicon_dark: ./assets/img/favicon-dark.png
+
+enable_footnote: true
+auto_dark_mode: true
+font: "Serif" # or "Sans Serif"
+
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - LICENSE-minimal-light
+  - vendor/

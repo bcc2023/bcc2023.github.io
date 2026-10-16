@@ -1,0 +1,7 @@
+main:
+
+  - title: "We Shape AI, and Thereafter AI Shape Us: Humans Align with AI through Social Influences"
+    conference_short: ICLR-W
+    conference: ICLR 2025 Workshop <strong>&</strong> CHI 2025 SIG
+    pdf: https://openreview.net/pdf?id=64rCWVC78p
+    image: ./assets/poster.png
