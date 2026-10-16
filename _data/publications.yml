@@ -27,7 +27,7 @@ main:
     notes: Under review
 
   - title: "Attention Is All UI Needs: The 6th Computational UI Workshop at CHI"
-    authors: Kewen Peng*, <strong>Beichen Xue*</strong>, Meng Chen, Felix Kretzer, Jeffrey Nichols, Tiffany Knearem, Alexander Maedche, Christof Lutteroth, Hans Gellersen, Jeffrey P. Bigham, Yue Jiang (*Equal contribution)
+    authors: Kewen Peng*, <strong>Beichen Xue*</strong>, Meng Chen, Felix Kretzer, Jeffrey Nichols, Tiffany Knearem, Alexander Maedche, Christof Lutteroth, Hans Gellersen, Jeffrey P. Bigham, Yue Jiang <strong>(*Equal contribution)</strong>
     conference: Workshop proposal, ACM CHI Conference on Human Factors in Computing Systems <strong>(CHI)</strong>, 2027.
     notes: Under review
 
