@@ -1,7 +1,7 @@
 main:
 
-  - title: "Toward Human-Like Task-Driven Gaze Navigation for Visualization"
-    authors: <strong>Beichen Xue</strong>, Yue Jiang
+  - title: "Toward Human-Like Task-Driven Gaze Navigation for Visualizations"
+    authors: <strong>Beichen Xue</strong>, Enkelejda Kasneci, Yue Jiang
     conference: ACM CHI Conference on Human Factors in Computing Systems <strong>(CHI)</strong>, 2027.
     notes: Under review
     image: ./assets/img/pubs/chi2027.png

@@ -104,7 +104,7 @@
   background-color:#000}
 
 email {
-    font-size: 14px;
+    font-size: 16px;
     font-family: "Ubuntu Mono";
 }
 
@@ -266,7 +266,7 @@ h1, h2, h3 {
 }
 
 h1 {
-  font-size:28px;
+  font-size:32px;
 }
 
 a {
@@ -467,6 +467,7 @@ footer {
 
   div.wrapper {
     width:auto;
+    max-width:none;
     margin:0;
   }
 
@@ -595,4 +596,20 @@ footer {
   margin-left: 0px;
   display:none;
   font-family: monospace;
+}
+/* Phones: center the publication thumbnails above their text */
+@media print, screen and (max-width: 480px) {
+  .publications ol.bibliography li .col-sm-3 .teaser {
+    display:block;
+    max-width:100%;
+    margin:5px auto 10px;
+  }
+  .publications ol.bibliography li .col-sm-3 .teaser-spacer {
+    display:none;
+  }
+  .publications ol.bibliography li .col-sm-3,
+  .publications ol.bibliography li .col-sm-9 {
+    padding-left:0 !important;
+    padding-right:0 !important;
+  }
 }
