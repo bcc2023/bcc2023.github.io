@@ -524,10 +524,20 @@ footer {
   .publications ol.bibliography li .col-sm-3 .teaser {
     display:block;
     max-width:100%;
-    margin:5px auto 10px;
+    margin:5px auto 8px;
   }
   .publications ol.bibliography li .col-sm-3 .teaser-spacer {
     display:none;
+  }
+  .publications ol.bibliography li .pub-row .abbr {
+    height:auto;
+    margin-bottom:0;
+  }
+  .publications ol.bibliography > br {
+    display:none;
+  }
+  section .publications ol.bibliography > li {
+    margin-bottom:1.5rem;
   }
   .publications ol.bibliography li .col-sm-3,
   .publications ol.bibliography li .col-sm-9 {
