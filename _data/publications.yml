@@ -2,7 +2,6 @@ main:
 
   - title: "A Holistic Taxonomy of User Activity in Dashboards"
     authors: <strong>Beichen Xue</strong>, Andrew McNutt, Yue Jiang
-    conference: Eurographics Conference on Visualization <strong>(EuroVis)</strong>.
     notes: Work in progress
 
   - title: "Toward Human-Like Task-Driven Gaze Navigation for Visualizations"
